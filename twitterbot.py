@@ -3,10 +3,10 @@ import time
 import os
 from os import environ
 
-CONSUMER_KEY = '4MYrtl1abe4XpWAXL4CBShpT1'
-CONSUMER_SECRET = 'mlBeex0aYzQJphu4p3xCm4YrT9aAxYiRB0z4wAdthxJ0b9nbqY'
-ACCESS_KEY = '998169701502009345-mUN1MbKwhee0ZtWoVUegAQ8iPOS6Lah'
-ACCESS_SECRET = 'hCEWkH7g6ki2pRnWl4HwZRZnzmF8qXEx2J67wQ7ukc14g'
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
